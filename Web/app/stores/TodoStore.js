@@ -45,7 +45,7 @@ var TodoStore = assign({}, EventEmitter.prototype, {
 export default TodoStore;
 
 let todoModel = new falcor.Model({
-  source: new falcorDataSource('/model.json')
+    source: new falcorDataSource('http://localhost:1337/model.json')
 });
 
 function create(text) {
